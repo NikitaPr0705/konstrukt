@@ -1,0 +1,24 @@
+@include font("Gilroy-ExtraBoldItalic", "Gilroy-ExtraBoldItalic", "900", "normal");
+@include font("LegatoTF-RegularItalic", "LegatoTF-RegularItalic", "400", "normal");
+@include font("Gilroy-Black", "Gilroy-Black", "400", "normal");
+
+
+@mixin font-main-light {
+  font-family: 'Gilroy-Light', sans-serif;
+}
+
+@mixin font-main-regular {
+  font-family: 'Gilroy-Regular', sans-serif;
+}
+
+@mixin font-main-medium {
+  font-family: 'Gilroy-Medium', sans-serif;
+}
+
+@mixin font-main-bold {
+  font-family: 'Gilroy-Bold', sans-serif;
+}
+
+@mixin font-main-extrabold {
+  font-family: 'Gilroy-ExtraBold', sans-serif;
+}

@@ -1,0 +1,116 @@
+@import "variables";
+@import "mixins";
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
+.container{
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 576px){
+    max-width: 560px;
+  }
+
+  @media screen and (min-width: 768px){
+    max-width: 720px;
+    padding: 0 15px;
+  }
+
+  @media screen and (min-width: 992px){
+    max-width: 960px;
+  }
+
+  @media screen and (min-width: 1300px){
+    max-width: 940px;
+  }
+}
+
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px; // чтобы удобно было считать rem
+
+}
+
+
+body {
+  color: $color-main;
+  @include font-main;
+  font-size: 1.3rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.01em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+
+.btn-main {
+  @include main-btn;
+  background-color: $color-secondary;
+}
+
+.picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover; // аналог background-image: cover, только для контентных изображений
+}
+
+
+.section-title {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 2.30625px;
+  padding: 0 15px;
+}

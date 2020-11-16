@@ -1,0 +1,26 @@
+@import "variables";
+
+@mixin main-btn {
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  overflow-wrap: break-word;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1.7em;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  padding: 0.7em 3.5em;
+  transition: $transition;
+}
+
+@mixin font-main {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@mixin font-secondary {
+  font-family: 'Bebas Neue', cursive;
+}
